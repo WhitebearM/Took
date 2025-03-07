@@ -1,0 +1,159 @@
+#upload_content {
+  width: 30rem;
+}
+
+#Make_text_box {
+  display: flex;
+  position: relative;
+}
+
+#make_imoji {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+#imoji_box_box {
+  position: absolute;
+  top: -325px;
+  right: -375px;
+}
+
+/* 업로드 컨텐츠 헤더영역 */
+#upload_content_header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* 닫기버튼 */
+#upload_close_btn {
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+/* 제목 */
+#content_title {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+/* 게시하기버튼 */
+#upload_btn {
+  background-color: #9269b2;
+  color: #f7f7f7;
+  margin-left: auto;
+}
+
+#upload_btn:hover {
+  background-color: #7a5597;
+}
+
+/* 파일업로드 버튼 */
+#upload_img {
+  width: 40px;
+  height: 40px;
+}
+
+/* 바디영역 */
+#upload_content_body {
+  margin: 10px auto;
+  width: 100%;
+}
+
+/* 카테고리 업로드 버튼 영역 */
+#upload_img_btn {
+  display: flex;
+  margin-left: auto;
+}
+
+/* 카테고리 */
+#upload_category_select {
+}
+
+/* 파일 제한 설명 */
+#upload_explanation {
+  font-size: 13px;
+  text-align: right;
+  margin: 5px auto;
+}
+
+/* 파일 미리보기 */
+#image_preview {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#video_preview,
+#audio_preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+/* 미리보기 컨테이너 */
+.image_preview_wrapper {
+  position: relative;
+  margin: auto 10px auto auto;
+}
+
+/* 미리보기 제거 버튼 위치 */
+.remove_image_button {
+  top: -10px;
+  right: -13px;
+}
+
+/* 미리보기 제거 버튼 */
+.remove_image_button img {
+  width: 15px;
+  height: 15px;
+}
+
+/* 큰 미리보기 위치*/
+#selected_image_preview {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+/* 큰 미리보기 이미지*/
+#selected_image_preview img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
+}
+/* 해쉬태그 */
+
+#tag_previews {
+  margin: 10px auto 5px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag_preview {
+  color: rgb(59 130 246);
+  margin-right: 14px;
+  position: relative;
+}
+
+/* 내용 입력 */
+#upload_content_dis {
+  margin: 5px auto auto auto;
+  padding-right: 40px;
+}
+
+/* 태그 삭제 버튼 */
+.remove_tag_button img {
+  margin: auto 2px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: -3px;
+  right: -14px;
+}

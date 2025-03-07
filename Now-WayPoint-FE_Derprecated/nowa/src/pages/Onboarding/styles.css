@@ -1,0 +1,80 @@
+.bg-image {
+  background-image: url('/src/assets/authbackground.png');
+  background-size: cover; /* 이미지가 요소를 완전히 덮도록 설정 */
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+  background-repeat: no-repeat; /* 이미지 반복을 없앰 */
+  position: relative; /* 오버레이를 위해 position 설정 */
+  /* z-index: 1; 오버레이가 배경보다 앞에 있도록 설정 */
+}
+
+.bg-image2 {
+  background-image: url('/src/assets/Locationbackground2.png');
+  background-size: cover; /* 이미지가 요소를 완전히 덮도록 설정 */
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+  background-repeat: no-repeat; /* 이미지 반복을 없앰 */
+  position: relative; /* 오버레이를 위해 position 설정 */
+  /* z-index: 1; 오버레이가 배경보다 앞에 있도록 설정 */
+}
+
+.transition-all {
+  transition: transform 1s ease-in-out;
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-full {
+  transform: translateX(-100%);
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.drop-animation {
+  animation: drop 1s ease-out forwards;
+}
+
+.bubble {
+  position: relative;
+  width: 300px;
+  height: 90px;
+  padding-top: 20px;
+  padding-left: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bubble button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end; /* 버튼을 오른쪽 끝으로 보냄 */
+  display: flex;
+  justify-content: flex-end; /* 아이콘을 버튼 내부에서 오른쪽 끝으로 보냄 */
+  align-items: flex-end; /* 아이콘을 버튼 내부에서 아래쪽 끝으로 보냄 */
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -15px;
+  top: 30px;
+}

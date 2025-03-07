@@ -1,0 +1,550 @@
+/* 전체적인 컨테이너 조정 */
+.detail_container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 60rem;
+  margin: 0;
+  border: 4px solid #ddd;
+  border-radius: 14px 14px 14px 14px;
+}
+
+/* 게시글 이미지 관련 */
+#detail_picture {
+  height: 80vh;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* 게시글 이미지 */
+#detail_picture_item1 img {
+  height: 80vh;
+  object-fit: contain;
+}
+
+/* 오른쪽 내용 크기 조정 */
+#detail_content_story {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 4.5rem auto 1fr auto auto;
+  height: 80vh;
+  min-width: 400px;
+  border-left: 4px solid #ddd;
+}
+
+/* 프로필 */
+#detail_right_profile {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.5px;
+}
+
+/* 내용 프로필 */
+#detail_content_profile {
+  margin: 20px auto 20px 10px;
+  display: flex;
+}
+
+/* 게시글 프로필 위치조정 */
+#detail_content_profile div {
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+/* 프로필 사진 크기조정*/
+#test_profile_img {
+  width: 40px;
+  height: 40px;
+}
+
+#test_profile_img img {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+#test_profile_img:hover {
+  cursor: pointer;
+}
+
+/* 프로필 아이디 크기 및 위치조정 */
+#detail_profile_id p {
+  margin-left: 12px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* 프로필 주소 */
+#detail_profile_address {
+  display: flex;
+}
+
+/* 프로필 주소 옆 마커 이미지 */
+#detail_profile_address img {
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+}
+/* 게시글 프로필 end */
+
+/* 게시글 내용 위치조정 */
+#detail_user_content {
+  position: relative;
+  margin-top: 1.5px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-left: 15px;
+  padding-top: 8px;
+}
+
+/* 유저가 작성하는 게시글내용 */
+#detail_user_write_content {
+  margin-left: 5px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  min-height: 6rem;
+  max-height: 9rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-right: 10px;
+}
+
+/* 해쉬태그 */
+#hashtag {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #016592;
+}
+
+/* 게시글 내용 end */
+
+/* 게시글 댓글 */
+#detail_content_coment {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-right: 10px;
+}
+
+#detail_content_coment::-webkit-scrollbar {
+  display: none;
+}
+
+/* 게시글 수정 삭제 아이콘 */
+#detail_content_edit {
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+/* 댓글 이미지 */
+#test_coment_img {
+  background-color: black;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin: 0px 18px 18px 18px;
+}
+
+#test_coment_img:hover {
+  cursor: pointer;
+}
+
+/* 댓글 단 사람 위치 조정 */
+#detail_coment_deep {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* 댓글 아이디 */
+#detail_coment_id {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 댓글 내용 */
+#detail_coment_content {
+  font-size: 12px;
+  width: 100%;
+}
+
+/* 댓글 작성 날짜  */
+#detail_coment_date {
+  color: #5a5a5a;
+  font-size: 12px;
+}
+
+/* 댓글 수정 삭제 라인 */
+#detail_coment_edit_line {
+  display: flex;
+  font-size: 12px;
+}
+
+/* 댓글 삭제 */
+#detail_coment_delete {
+  margin-left: 10px;
+}
+
+#detail_coment_delete:hover {
+  color: rgb(101, 169, 228);
+  transition: 0.25s;
+}
+
+#detail_comment_like {
+  display: flex;
+  width: 15px;
+  height: 15px;
+}
+
+#detail_comment_like:hover {
+  cursor: pointer;
+}
+
+#detail_comment_like_count {
+  margin: 0px 5px;
+  font-size: 10px;
+}
+
+#detail_coment_recoment {
+  font-size: 12px;
+  color: #5a5a5a;
+  margin: auto 7px;
+}
+
+#detail_coment_recoment:hover {
+  cursor: pointer;
+}
+
+#detail_reply_content {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 12px;
+}
+
+#detail_reply_write_button {
+  font-size: 12px;
+  color: #5a5a5a;
+}
+
+/* 댓글 end */
+
+/* 댓답글 */
+.comment-children {
+  margin-left: -50px;
+}
+
+.comment-children #detail_coment_deep {
+  width: 100%;
+}
+
+.comment-children #detail_coment_id {
+  width: 100%;
+}
+.comment-children #detail_coment_content {
+  width: 100%;
+}
+
+/* 멘션 리스트 */
+.mention-list {
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.mention {
+  color: rgb(0, 174, 255);
+}
+
+/* 멘션 이미지 */
+
+.mention_profile {
+  display: flex;
+}
+
+.mention_profile:hover {
+  cursor: pointer;
+  background-color: #7a7a7a;
+}
+
+.mention_profile img {
+  margin: 5px 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+
+.mention-list-parent {
+  border: 1px solid #ddd;
+  position: absolute;
+  bottom: 2px;
+  right: -180px;
+  font-size: 12px;
+  max-height: 50%;
+  width: 170px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: white;
+  border-radius: 12px;
+  z-index: 10000;
+}
+
+.mention_name {
+  padding-top: 8px;
+}
+
+/* 좋아요 칸 위치 조정 */
+#detail_content_heart {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+/* 좋아요 위치 조정 */
+#detail_heart_count {
+  font-size: 14px;
+  margin: auto 5px;
+}
+
+#detail_like_button {
+  padding-top: 4px;
+}
+
+#detail_like_button img {
+  width: 15px;
+  height: 15px;
+}
+
+#detail_like_button img:hover {
+  cursor: pointer;
+}
+
+/* 게시글 게시지난 날짜 */
+#detail_heart_write_date {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* 좋아요 게시 날짜 end */
+
+/* 댓글작성 */
+#detail_coment_content_content {
+  flex: 1;
+  height: 100px;
+  resize: none;
+  font-size: 12px;
+  padding: 10px;
+  border: none;
+}
+
+/* textarea클릭시 border 진해짐 제거 */
+#detail_coment_content_content:focus {
+  outline: none;
+}
+
+#detail_coment_write {
+  display: flex;
+}
+
+#detail_coment_write_button {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+  width: 4rem;
+}
+
+#detail_coment_write_button button {
+  margin-top: 45px;
+  background-color: #ddd;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 8px;
+}
+
+#detail_coment_write_button button:hover {
+  background-color: #ccc;
+  border: 1px solid gray;
+}
+
+#detail_coment_write_button button:hover {
+  transition: 0.25s;
+}
+
+/* 조회된 댓글이 없는 경우 */
+#no_comments {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  padding: 50px;
+}
+
+/* 조회된 게시글이 없을 경우 */
+#detail_not_found_error {
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file_preview_wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+}
+
+.remove_image_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+}
+#preview_container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 80vh;
+  border-radius: 12px 0px 0px 12px;
+}
+
+#preview_container video {
+  border-radius: 12px 0px 0px 12px;
+}
+
+#image_preview {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+video {
+  max-width: 150px;
+}
+
+audio {
+  margin-top: 45%;
+}
+
+#d_d {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+}
+
+#write_content_emoji {
+  margin-left: 15px;
+  width: 20px;
+}
+
+#detail_kakao_share {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+}
+
+#detail_write_picker {
+  position: absolute;
+  bottom: 0px;
+  right: -360px;
+}
+#test {
+  position: relative;
+}
+
+#write_comment_comment_emoji {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  bottom: 10px;
+  left: 5px;
+  cursor: pointer;
+}
+
+#reply_comment_picker {
+  position: absolute;
+  right: -360px;
+  bottom: 0px;
+}
+
+/* 캐러셀 */
+
+.carousel .control-dots {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel .control-dots .dot {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#left {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.8;
+}
+
+#right {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: none;
+  background-color: none;
+  border: none;
+  padding: 0;
+  cursor: pointe;
+  opacity: 0.8;
+}
+
+.like-list {
+  position: absolute;
+  bottom: 154px;
+  right: 20;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.like-list-item {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.like-list-item img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
